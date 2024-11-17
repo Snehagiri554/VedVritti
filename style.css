@@ -404,6 +404,86 @@ align-items: center;
     background-color: #355E3B;
 }
 
+/* Keyframes for fade-in and slide-up animation */
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-content {
+    opacity: 0;
+    animation: fadeSlideUp 1s ease-in-out forwards;
+}
+
+/* Keyframes for slide-up fade-in */
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to icons */
+.animate-icons .icons {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUpFadeIn 1s ease-in-out forwards;
+}
+
+.animate-icons .icons:nth-child(1) {
+    animation-delay: 1.2s;
+}
+.animate-icons .icons:nth-child(2) {
+    animation-delay: 1.4s;
+}
+.animate-icons .icons:nth-child(3) {
+    animation-delay: 1.6s;
+}
+.animate-icons .icons:nth-child(4) {
+    animation-delay: 1.8s;
+}
+
+/* Apply animation to benefit items */
+.animate-benefits .benefit-info {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUpFadeIn 1s ease-in-out forwards;
+}
+
+.animate-benefits .benefit-info:nth-child(1) {
+    animation-delay: 1.3s;
+}
+.animate-benefits .benefit-info:nth-child(2) {
+    animation-delay: 1.6s;
+}
+.animate-benefits .benefit-info:nth-child(3) {
+    animation-delay: 1.9s;
+}
+.animate-benefits .benefit-info:nth-child(4) {
+    animation-delay: 2.2s;
+}
+.animate-benefits .benefit-info:nth-child(5) {
+    animation-delay: 2.5s;
+}
+.animate-benefits .benefit-info:nth-child(6) {
+    animation-delay: 2.8s;
+}
+
+.benefit-info:hover {
+    background-color: #f0f8e7;
+    transform: scale(1.02);
+    transition: all 1.3s ease-in-out;
+}
+
 /**** Responsive Design ****/
 @media (max-width: 768px) {
     .content-wrapper {
